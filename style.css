@@ -1,0 +1,34 @@
+.imagencarusel1{
+    height: 65vh;
+}
+.logo{
+    width: 160px;
+    height: 40px;
+}
+.imagen{        
+    height: 25vh;
+}
+#imagen{
+    height: 30vh;
+}
+.boton{
+    width: 2rem;
+}
+.menu{
+    height: 85.5vh;
+}
+.carta{
+    height: 55vh;   
+}
+.titulo{
+    height: 6.5vh;
+}
+.cuerpo{
+    height: 14vh;
+    display: flex;
+    align-items: center;
+}
+.mensaje{
+    display: flexbox;
+    justify-content: center;
+}
