@@ -7,7 +7,7 @@ fetch(urlsprint)
 
     let crearTr = document.getElementById("crearTr")
     let PrimerTr = document.createElement("tr")
-    PrimerTr.innerHTML = `<th class="bg-secondary" colspan="3">Events Statistics</th>`
+    PrimerTr.innerHTML = `<th class="bg-dark text-white" colspan="3">Events Statistics</th>`
 
     crearTr.appendChild(PrimerTr)
 
@@ -54,7 +54,7 @@ fetch(urlsprint)
 
 
     let nuevoTr = document.createElement("tr")
-    nuevoTr.innerHTML = `<th class="bg-secondary" colspan="3">Upcoming events statistics by category</th>`
+    nuevoTr.innerHTML = `<th class="bg-dark text-white" colspan="3">Upcoming events statistics by category</th>`
 
     crearTr.appendChild(nuevoTr)
 
@@ -92,7 +92,7 @@ fetch(urlsprint)
     }
 
     let nuevoTrPast = document.createElement("tr")
-    nuevoTrPast.innerHTML = `<th class="bg-secondary" colspan="3">Past Events statistics by category</th>`
+    nuevoTrPast.innerHTML = `<th class="bg-dark text-white" colspan="3">Past Events statistics by category</th>`
 
     crearTr.appendChild(nuevoTrPast)
 
