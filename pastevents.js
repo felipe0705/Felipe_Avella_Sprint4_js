@@ -1,4 +1,4 @@
-import { pintarTarjetas, pintarCheckbox, filtrarCheckbox, filtrarPalabra, } from "./modulos/funciones.js";
+import { pintarTarjetas, pintarCheckbox, filtrarCheckbox, filtrarPalabra, filtrarP } from "./modulos/funciones.js";
 
 let urlsprint = "https://mindhub-xj03.onrender.com/api/amazing"
 fetch(urlsprint)
@@ -130,21 +130,10 @@ buscador.addEventListener("keyup",nuv => {
 
 let eventos = document.getElementById("futuros")
 
-let eventosF = filtrar(data.events, data.currentDate )
+let eventosF = filtrarP(data.events, data.currentDate )
 pintarTarjetas( eventosF, eventos)
 
 
-function filtrar(arreglo, fecha) {
-    let nuevoarreglo = []
-    for (let i = 0; i < arreglo.length; i++) {
-        if (arreglo[i].date < fecha) {
-            nuevoarreglo.push(arreglo[i])
-        }
-        
-    }
-    return nuevoarreglo
-    
-}
 
 })
 

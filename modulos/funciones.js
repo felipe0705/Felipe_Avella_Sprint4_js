@@ -84,3 +84,27 @@ export function filtrarPalabra(arregloEvento, palabraClave) {
     return arregloNuevo
 }
 
+export function filtrarF(arreglo, fecha) {
+    let nuevoarreglo = []
+    for (let i = 0; i < arreglo.length; i++) {
+        if (arreglo[i].date > fecha) {
+            nuevoarreglo.push(arreglo[i])
+        }
+
+    }
+    return nuevoarreglo
+
+}
+
+export function filtrarP(arreglo, fecha) {
+    let nuevoarreglo = []
+    for (let i = 0; i < arreglo.length; i++) {
+        if (arreglo[i].date < fecha) {
+            nuevoarreglo.push(arreglo[i])
+        }
+        
+    }
+    return nuevoarreglo
+    
+}
+
